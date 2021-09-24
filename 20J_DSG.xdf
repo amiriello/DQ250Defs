@@ -1,0 +1,976 @@
+<!-- Written 09/24/2021 15:22:16 -->
+<XDFFORMAT version="1.70">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <description></description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x14FFFE" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="Target Shift Times (Upshift)" />
+    <CATEGORY index="0x1" name="Target Shift Times (Downshift)" />
+    <CATEGORY index="0x2" name="Clutch Apply (Downshift)" />
+    <CATEGORY index="0x3" name="Clutch Apply (Overlap)" />
+  </XDFHEADER>
+  <XDFTABLE uniqueid="0x2926" flags="0x0">
+    <title>Target Shift Times Eco Mode</title>
+    <description>Schaltzeiten in D (Eco)&#013;&#010;KhsTSchaltEco_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184FC" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x761C" flags="0x0">
+    <title>Target Shift Times Sport Mode</title>
+    <description>Schaltzeiten in S (Sport)&#013;&#010;KhsTSchaltSport_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18530" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x6AB6" flags="0x0">
+    <title>Target Shift Times Manual Mode</title>
+    <description>Schaltzeiten in Tiptronic&#013;&#010;KhsTSchaltTip_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18564" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5BDE" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Eco Mode</title>
+    <description>Schaltzeiten in D (Eco) mit Momentenreduktion&#013;&#010;KhsMRedTSchaltEco_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18598" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5457" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Normal Mode</title>
+    <description>Schaltzeiten in D (Normal) mit Momentenreduktion&#013;&#010;KhsMRedTSchaltNormal_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x185CC" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x17D4" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Sport Mode</title>
+    <description>Schaltzeiten in S (Sport) mit Momentenreduktion&#013;&#010;KhsMRedTSchaltSport_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18600" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x45DE" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Manual Mode</title>
+    <description>Schaltzeiten in Tiptronic mit Momentenreduktion&#013;&#010;KhsMRedTSchaltTip_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x184F0" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>67</unittype>
+      <DALINK index="0" />
+      <MATH equation=".1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18634" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x74F5" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Eco Mode (RPM Based)</title>
+    <description>Schaltzeiten in D (Eco) mit Momentenreduktion&#013;&#010;dTSchaltEco_NZiel_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18898" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x188A4" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x159B" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Normal Mode (RPM Based)</title>
+    <description>Schaltzeiten in D (Eco) mit Momentenreduktion&#013;&#010;KhsMRedTSchaltNormal_NZiel_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18898" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x188D8" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x3DE9" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Sport Mode (RPM Based)</title>
+    <description>Schaltzeiten in S (Sport) mit Momentenreduktion&#013;&#010;KhsMRedTSchaltSport_NZiel_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18898" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1890C" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x617A" flags="0x0">
+    <title>Target Shift Times With Torque Mgmt Manual Mode (RPM Based)</title>
+    <description>Schaltzeiten in Tiptronic mit Momentenreduktion&#013;&#010;KhsMRedTSchaltTip_NZiel_kl</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18898" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>5</indexcount>
+      <outputtype>2</outputtype>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>4</unittype>
+      <DALINK index="0" />
+      <MATH equation="1*X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1-&gt;2" />
+      <LABEL index="1" value="2-&gt;3" />
+      <LABEL index="2" value="3-&gt;4" />
+      <LABEL index="3" value="4-&gt;5" />
+      <LABEL index="4" value="5-&gt;6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18940" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5ABE" flags="0x0">
+    <title>Maximum Downshift Time Manual Mode</title>
+    <description>maximale Schaltzeiten f&#252;r R&#252;ckschaltungen f&#252;r Tiptronic-Betrieb&#013;&#010;KrsSchaltzeitTip_kf</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18EFC" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x4564" flags="0x0">
+    <title>Maximum Downshift Time Eco Mode</title>
+    <description>maximale Schaltzeiten f&#252;r R&#252;ckschaltungen im Economic-Betrieb&#013;&#010;KrsSchaltzeitEco_kf</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18F30" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x1040" flags="0x0">
+    <title>Maximum Downshift Time Sport Mode</title>
+    <description>maximale Schaltzeiten f&#252;r R&#252;ckschaltungen im Sport-Betrieb&#013;&#010;KrsSchaltzeitSport_kf</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18F64" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x344C" flags="0x0">
+    <title>Maximum Clutch Apply Rate Eco</title>
+    <description>max. Sollgradient f&#252;r Einfach-R&#252;ckschaltungen im Economic-Betrieb&#013;&#010;KrsNpMaxEco_kf</description>
+    <CATEGORYMEM index="0" category="3" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18FBC" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM/s</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x1226" flags="0x0">
+    <title>Maximum Clutch Apply Rate Sport</title>
+    <description>max. Sollgradient f&#252;r Einfach-R&#252;ckschaltungen im Sport-Betrieb&#013;&#010;KrsNpMaxSport_kf</description>
+    <CATEGORYMEM index="0" category="3" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18FF0" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM/s</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x266D" flags="0x0">
+    <title>Maximum Clutch Apply Rate Manual</title>
+    <description>max. Sollgradient f&#252;r Einfach-R&#252;ckschaltungen im Tiptronic-Betrieb&#013;&#010;KrsNpMaxTip_kf</description>
+    <CATEGORYMEM index="0" category="3" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EE4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>64</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2-&gt;1" />
+      <LABEL index="1" value="3-&gt;2" />
+      <LABEL index="2" value="4-&gt;3" />
+      <LABEL index="3" value="5-&gt;4" />
+      <LABEL index="4" value="6-&gt;5" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x19024" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM/s</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0xB">
+    <title>Gear Shift Display (01 for Display 02 for D/S)</title>
+    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x14AA0" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>3</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFTABLE uniqueid="0x6FA6" flags="0x0">
+    <title>Brake Pressure for Raised Downshift (Normal)</title>
+    <description>Bremsdruck f&#252;r die Anhebung der R&#252;ckschaltschwelle im 2. Gang bei &#214;kotyp&#013;&#010;GesBrs_PBrMin_RSAnh_ko</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2" />
+      <LABEL index="1" value="3" />
+      <LABEL index="2" value="4" />
+      <LABEL index="3" value="5" />
+      <LABEL index="4" value="6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x12888" mmedelementsizebits="16" mmedrowcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5A94" flags="0x0">
+    <title>Brake Pressure vs Creep Torque</title>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x131FC" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x13BD4" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>5</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>73</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x132E4" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.02">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0xD1A" flags="0x0">
+    <title>Minumum Clutch Apply Rate</title>
+    <description>Minimale Momenten&#228;nderung an der kommenden Kupplung w&#228;hrend der &#220;berschneidung&#013;&#010;KhsDMKommendUeberMin_ko</description>
+    <CATEGORYMEM index="0" category="4" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x189C4" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm/s</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*2">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x779E" flags="0x0">
+    <title>Maximum Clutch Apply Rate</title>
+    <description>Maximale Momenten&#228;nderung an der kommenden Kupplung w&#228;hrend der &#220;berschneidung&#013;&#010;KhsDMKommendUeberMax_ko</description>
+    <CATEGORYMEM index="0" category="4" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x189C6" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm/s</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*2">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5A47" flags="0x0">
+    <title>Brake Pressure for Raised Downshift (Sport)</title>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>5</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="2" />
+      <LABEL index="1" value="3" />
+      <LABEL index="2" value="4" />
+      <LABEL index="3" value="5" />
+      <LABEL index="4" value="6" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x12892" mmedelementsizebits="16" mmedrowcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>
