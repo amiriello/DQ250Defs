@@ -1,4 +1,4 @@
-<!-- Written 01/28/2022 21:12:32 -->
+<!-- Written 01/29/2022 09:53:07 -->
 <XDFFORMAT version="1.70">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -3903,4 +3903,17 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x390B">
+    <title>Maximum Engine Speed</title>
+    <description>Ges_NMotorMax_ko&#013;&#010;DSG will deny downshifts and force upshifts to keep engine speed below this value</description>
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x13A66" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>RPM</units>
+    <decimalpl>1</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*1">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
 </XDFFORMAT>
