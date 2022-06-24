@@ -1,0 +1,489 @@
+<ecus>
+	<ecu_struct>
+		<map name="Target Shift Times Eco Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in D (Eco)
+KhsTSchaltEco_kl">
+			<data offset="#184FC" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times Sport Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in S (Sport)
+KhsTSchaltSport_kl">
+			<data offset="#18530" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times Manual Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in Tiptronic
+KhsTSchaltTip_kl">
+			<data offset="#18564" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Eco Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in D (Eco) mit Momentenreduktion
+KhsMRedTSchaltEco_kl">
+			<data offset="#18598" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Normal Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in D (Normal) mit Momentenreduktion
+KhsMRedTSchaltNormal_kl">
+			<data offset="#185CC" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Sport Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in S (Sport) mit Momentenreduktion
+KhsMRedTSchaltSport_kl">
+			<data offset="#18600" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Manual Mode" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in Tiptronic mit Momentenreduktion
+KhsMRedTSchaltTip_kl">
+			<data offset="#18634" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#184F0" storagetype="uint16" count="5" metric="%" func_2val=".1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Eco Mode (RPM Based)" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in D (Eco) mit Momentenreduktion
+dTSchaltEco_NZiel_kl">
+			<data offset="#188A4" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#18898" storagetype="uint16" count="5" metric="RPM" func_2val="1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Normal Mode (RPM Based)" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in D (Eco) mit Momentenreduktion
+KhsMRedTSchaltNormal_NZiel_kl">
+			<data offset="#188D8" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#18898" storagetype="uint16" count="5" metric="RPM" func_2val="1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Sport Mode (RPM Based)" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in S (Sport) mit Momentenreduktion
+KhsMRedTSchaltSport_NZiel_kl">
+			<data offset="#1890C" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#18898" storagetype="uint16" count="5" metric="RPM" func_2val="1*[x]"/>
+		</map>
+		<map name="Target Shift Times With Torque Mgmt Manual Mode (RPM Based)" type="3" class="Target Shift Times (Upshift)" help="Schaltzeiten in Tiptronic mit Momentenreduktion
+KhsMRedTSchaltTip_NZiel_kl">
+			<data offset="#18940" storagetype="uint16" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" func_2val="[x]"/>
+			<cols offset="#18898" storagetype="uint16" count="5" metric="RPM" func_2val="1*[x]"/>
+		</map>
+		<map name="Maximum Downshift Time Manual Mode" type="3" class="Target Shift Times (Downshift)" help="maximale Schaltzeiten für Rückschaltungen für Tiptronic-Betrieb
+KrsSchaltzeitTip_kf">
+			<data offset="#18EFC" storagetype="uint16" metric="ms" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Maximum Downshift Time Eco Mode" type="3" class="Target Shift Times (Downshift)" help="maximale Schaltzeiten für Rückschaltungen im Economic-Betrieb
+KrsSchaltzeitEco_kf">
+			<data offset="#18F30" storagetype="uint16" metric="ms" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Maximum Downshift Time Sport Mode" type="3" class="Target Shift Times (Downshift)" help="maximale Schaltzeiten für Rückschaltungen im Sport-Betrieb
+KrsSchaltzeitSport_kf">
+			<data offset="#18F64" storagetype="uint16" metric="ms" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Maximum Clutch Apply Rate Eco" type="3" class="Clutch Apply (Downshift)" help="max. Sollgradient für Einfach-Rückschaltungen im Economic-Betrieb
+KrsNpMaxEco_kf">
+			<data offset="#18FBC" storagetype="uint16" metric="RPM/s" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Maximum Clutch Apply Rate Sport" type="3" class="Clutch Apply (Downshift)" help="max. Sollgradient für Einfach-Rückschaltungen im Sport-Betrieb
+KrsNpMaxSport_kf">
+			<data offset="#18FF0" storagetype="uint16" metric="RPM/s" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Maximum Clutch Apply Rate Manual" type="3" class="Clutch Apply (Downshift)" help="max. Sollgradient für Einfach-Rückschaltungen im Tiptronic-Betrieb
+KrsNpMaxTip_kf">
+			<data offset="#19024" storagetype="uint16" metric="RPM/s" format="%.2f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+			<cols offset="#18EE4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.1"/>
+		</map>
+		<map name="Brake Pressure for Raised Downshift (Normal)" type="2" help="Bremsdruck für die Anhebung der Rückschaltschwelle im 2. Gang bei Ökotyp
+GesBrs_PBrMin_RSAnh_ko">
+			<data offset="#12888" storagetype="uint16" metric="Nm" format="%.2f" func_2val="[x]*.01"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+		</map>
+		<map name="Brake Pressure vs Creep Torque" type="3">
+			<data offset="#132E4" storagetype="int16" format="%.2f" func_2val="[x]*.02"/>
+			<rows offset="#13BD4" storagetype="int16" count="5" metric="Nm" func_2val="[x]*.01"/>
+			<cols offset="#131FC" storagetype="int16" count="4" func_2val="[x]"/>
+		</map>
+		<map name="Minumum Clutch Apply Rate" type="2" class="Clutch Apply (Overlap)" help="Minimale Momentenänderung an der kommenden Kupplung während der Überschneidung
+KhsDMKommendUeberMin_ko">
+			<data offset="#189C4" storagetype="uint16" metric="Nm/s" format="%.2f" func_2val="[x]*2"/>
+			<rows default="1" storagetype="uint8" count="1" func_2val="[x]"/>
+		</map>
+		<map name="Maximum Clutch Apply Rate" type="2" class="Clutch Apply (Overlap)" help="Maximale Momentenänderung an der kommenden Kupplung während der Überschneidung
+KhsDMKommendUeberMax_ko">
+			<data offset="#189C6" storagetype="uint16" metric="Nm/s" format="%.2f" func_2val="[x]*2"/>
+			<rows default="1" storagetype="uint8" count="1" func_2val="[x]"/>
+		</map>
+		<map name="Brake Pressure for Raised Downshift (Sport)" type="2">
+			<data offset="#12892" storagetype="uint16" metric="Nm" format="%.2f" func_2val="[x]*.01"/>
+			<rows default="1" storagetype="uint8" count="5" metric="Gear" func_2val="[x]"/>
+		</map>
+		<map name="Upshift 1-&gt;2 Eco" type="3" class="Shift Schedule">
+			<data offset="#10DA8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 1-&gt;2 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11CA8" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 1-&gt;2 Normal" type="3" class="Shift Schedule">
+			<data offset="#10F88" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 1-&gt;2 Offroad" type="3" class="Shift Schedule">
+			<data offset="#118E8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 1-&gt;2 Sport" type="3" class="Shift Schedule">
+			<data offset="#11528" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 2-&gt;3 Eco" type="3" class="Shift Schedule">
+			<data offset="#10E08" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 2-&gt;3 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11D08" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 2-&gt;3 Normal" type="3" class="Shift Schedule">
+			<data offset="#10FE8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 2-&gt;3 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11948" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 2-&gt;3 Sport" type="3" class="Shift Schedule">
+			<data offset="#11588" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 3-&gt;4 Eco" type="3" class="Shift Schedule">
+			<data offset="#10E68" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 3-&gt;4 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11D68" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 3-&gt;4 Normal" type="3" class="Shift Schedule">
+			<data offset="#11048" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 3-&gt;4 Offroad" type="3" class="Shift Schedule">
+			<data offset="#119A8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 3-&gt;4 Sport" type="3" class="Shift Schedule">
+			<data offset="#115E8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 4-&gt;5 Eco" type="3" class="Shift Schedule">
+			<data offset="#10EC8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 4-&gt;5 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11DC8" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 4-&gt;5 Normal" type="3" class="Shift Schedule">
+			<data offset="#110A8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 4-&gt;5 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11A08" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 4-&gt;5 Sport" type="3" class="Shift Schedule">
+			<data offset="#11648" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 5-&gt;6 Eco" type="3" class="Shift Schedule">
+			<data offset="#10F28" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 5-&gt;6 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11E28" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 5-&gt;6 Normal" type="3" class="Shift Schedule">
+			<data offset="#11108" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 5-&gt;6 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11A68" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Upshift 5-&gt;6 Sport" type="3" class="Shift Schedule">
+			<data offset="#116A8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127D0" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 2-&gt;1 Eco" type="3" class="Shift Schedule">
+			<data offset="#11168" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 2-&gt;1 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11E88" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Kickdown Switch 2-&gt;1 in TT" type="2" class="Shift Schedule">
+			<data offset="#126F0" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Downshift 2-&gt;1 Normal" type="3" class="Shift Schedule">
+			<data offset="#11348" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 2-&gt;1 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11AC8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 2-&gt;1 Sport" type="3" class="Shift Schedule">
+			<data offset="#11708" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 3-&gt;2 Eco" type="3" class="Shift Schedule">
+			<data offset="#111C8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 3-&gt;2 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11EE8" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Kickdown Switch 3-&gt;2 in TT" type="2" class="Shift Schedule">
+			<data offset="#126F8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Downshift 3-&gt;2 Normal" type="3" class="Shift Schedule">
+			<data offset="#113A8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 3-&gt;2 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11B28" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 3-&gt;2 Sport" type="3" class="Shift Schedule">
+			<data offset="#11768" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 4-&gt;3 Eco" type="3" class="Shift Schedule">
+			<data offset="#11228" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 4-&gt;3 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11F48" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Kickdown Switch 4-&gt;3 in TT" type="2" class="Shift Schedule">
+			<data offset="#12700" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Downshift 4-&gt;3 Normal" type="3" class="Shift Schedule">
+			<data offset="#11408" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 4-&gt;3 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11B88" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 4-&gt;3 Sport" type="3" class="Shift Schedule">
+			<data offset="#117C8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 5-&gt;4 Eco" type="3" class="Shift Schedule">
+			<data offset="#11288" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 5-&gt;4 Uphill" type="3" class="Shift Schedule">
+			<data offset="#11FA8" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Kickdown Switch 5-&gt;4 in TT" type="2" class="Shift Schedule">
+			<data offset="#12710" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Downshift 5-&gt;4 Normal" type="3" class="Shift Schedule">
+			<data offset="#11468" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#127E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 5-&gt;4 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11BE8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 5-&gt;4 Sport" type="3" class="Shift Schedule">
+			<data offset="#11828" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 6-&gt;5 Eco" type="3" class="Shift Schedule">
+			<data offset="#112E8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 6-&gt;5 Uphill" type="3" class="Shift Schedule">
+			<data offset="#12008" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Kickdown Switch 6-&gt;5 in TT" type="2" class="Shift Schedule">
+			<data offset="#12350" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Downshift 6-&gt;5 Normal" type="3" class="Shift Schedule">
+			<data offset="#114C8" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 6-&gt;5 Offroad" type="3" class="Shift Schedule">
+			<data offset="#11C48" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Downshift 6-&gt;5 Sport" type="3" class="Shift Schedule">
+			<data offset="#11888" storagetype="int16" metric="%" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="int16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+			<cols offset="#138E8" storagetype="int16" count="12" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Max Mode 1-&gt;2 Manual" type="2" class="Shift Schedule">
+			<data offset="#126C8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Max Mode 2-&gt;3 Manual" type="2" class="Shift Schedule">
+			<data offset="#126D0" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Max Mode 3-&gt;4 Manual" type="2" class="Shift Schedule">
+			<data offset="#126D8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#3281C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Max Mode 4-&gt;5 Manual" type="2" class="Shift Schedule">
+			<data offset="#126E0" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Max Mode 5-&gt;6 Manual" type="2" class="Shift Schedule">
+			<data offset="#126E8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Duration of Torque Management in Eco" type="3" class="Torque Management">
+			<data offset="#18784" storagetype="int16" metric="ms" format="%.1f" func_2val="[x]*10.0000000000"/>
+			<rows offset="#1877C" storagetype="int16" count="4" metric="ï¿½C" format="%.1f" func_2val="[x]"/>
+			<cols offset="#18774" storagetype="int16" count="4" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Duration of Torque Management in Normal" type="3" class="Torque Management">
+			<data offset="#187E4" storagetype="int16" metric="ms" format="%.1f" func_2val="[x]*10.0000000000"/>
+			<rows offset="#1877C" storagetype="int16" count="4" metric="ï¿½C" format="%.1f" func_2val="[x]"/>
+			<cols offset="#18774" storagetype="int16" count="4" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Duration of Torque Management in Sport" type="3" class="Torque Management">
+			<data offset="#187A4" storagetype="int16" metric="ms" format="%.1f" func_2val="[x]*10.0000000000"/>
+			<rows offset="#1877C" storagetype="int16" count="4" metric="ï¿½C" format="%.1f" func_2val="[x]"/>
+			<cols offset="#18774" storagetype="int16" count="4" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Duration of Torque Management in Tiptronic" type="3" class="Torque Management">
+			<data offset="#187C4" storagetype="int16" metric="ms" format="%.1f" func_2val="[x]*10.0000000000"/>
+			<rows offset="#1877C" storagetype="int16" count="4" metric="ï¿½C" format="%.1f" func_2val="[x]"/>
+			<cols offset="#18774" storagetype="int16" count="4" metric="%" format="%.1f" func_2val="[x]*0.1000000000"/>
+		</map>
+		<map name="Line Pressure Offset" type="3">
+			<data offset="#12C7C" storagetype="uint16" format="%.2f" func_2val="[x]*.01"/>
+			<rows offset="#12C5C" storagetype="int16" count="8" func_2val="[x]"/>
+			<cols offset="#12C54" storagetype="int16" count="4" func_2val="[x]"/>
+		</map>
+		<map name="Forced Upshift 1-&gt;2 in TT" type="2" class="Shift Schedule">
+			<data offset="#18470" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Forced Upshift 2-&gt;3 in TT" type="2" class="Shift Schedule">
+			<data offset="#18478" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Forced Upshift 3-&gt;4 in TT" type="2" class="Shift Schedule">
+			<data offset="#18480" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Forced Upshift 4-&gt;5 in TT" type="2" class="Shift Schedule">
+			<data offset="#18488" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Forced Upshift 5-&gt;6 in TT" type="2" class="Shift Schedule">
+			<data offset="#18490" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Offset From Target Idle For Forced Downshift 2-&gt;1" type="2" class="Shift Schedule">
+			<data offset="#18498" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1280C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Offset From Target Idle For Forced Downshift 3-&gt;2" type="2" class="Shift Schedule">
+			<data offset="#184A0" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12814" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Offset From Target Idle For Forced Downshift 4-&gt;3" type="2" class="Shift Schedule">
+			<data offset="#184A8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1281C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Offset From Target Idle For Forced Downshift 5-&gt;4" type="2" class="Shift Schedule">
+			<data offset="#184B0" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#12824" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Offset From Target Idle For Forced Downshift 6-&gt;5" type="2" class="Shift Schedule">
+			<data offset="#184B8" storagetype="int16" metric="U/Min" format="%.1f" func_2val="[x]"/>
+			<rows offset="#1282C" storagetype="uint16" count="4" metric="Nm" format="%.1f" func_2val="[x]"/>
+		</map>
+		<map name="Max RPM for Manual Downshift" type="2" class="Shift Schedule">
+			<data offset="#184D8" storagetype="int16" metric="U/min" format="%.1f" func_2val="[x]"/>
+			<rows default="1" storagetype="uint8" count="5" metric="RS" format="%.1f" func_2val="[x]"/>
+		</map>
+	</ecu_struct>
+</ecus>
