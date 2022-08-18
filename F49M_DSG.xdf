@@ -1,4 +1,4 @@
-<!-- Written 07/07/2022 22:37:47 -->
+<!-- Written 08/18/2022 19:26:18 -->
 <XDFFORMAT version="1.70">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -5156,6 +5156,46 @@
     <unittype>0</unittype>
     <DALINK index="0" />
     <MATH equation="X*0.1000000000">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x3AEC">
+    <title>Upper Pressure Limit for K1</title>
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x194C8" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.01">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x27F6">
+    <title>Upper Current Limit for K1</title>
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x194C4" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>66</datatype>
+    <unittype>41</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.1">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4D8">
+    <title>Upper Current Limit for K2</title>
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x194C6" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>66</datatype>
+    <unittype>41</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.1">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7DBD">
+    <title>Upper Pressure Limit for K2</title>
+    <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x194CA" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.01">
       <VAR id="X" />
     </MATH>
   </XDFCONSTANT>
